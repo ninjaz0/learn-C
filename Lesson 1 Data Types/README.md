@@ -1,6 +1,6 @@
 # Lesson 1 Data Types
 
-#### 程序运行结果:
+### 程序运行结果:
 
 ```
 int a = 10
@@ -19,7 +19,7 @@ Size of long: 8 bytes
 Size of variable a: 4 bytes
 Size of string str: 14 bytes
 ```
-#### 不同数据类型所占大小如图
+### 数据类型所占大小如图:
 | Data Type / Object | Size (bytes) |
 |-------------------|-------------|
 | char              | 1           |
@@ -29,6 +29,21 @@ Size of string str: 14 bytes
 | double            | 8           |
 | long              | 8           |
 | string str        | 14          |
+
+### 占位符的使用:
+
+| **类型**                | **占位符** | **含义**                                                     | **示例代码**                                 | **示例输出**         |
+| ----------------------- | ---------- | ------------------------------------------------------------ | -------------------------------------------- | -------------------- |
+| 整型 (`int`)            | `%d`       | 输出带符号的十进制整数                                       | `printf("int a = %d\n", 42);`                | `int a = 42`         |
+| 浮点型 (`float`)        | `%.2f`     | 输出浮点数，保留2位小数（四舍五入）                          | `printf("float b = %.2f\n", 3.141);`         | `float b = 3.14`     |
+| 双精度 (`double`)       | `%.5lf`    | 输出双精度浮点数，保留5位小数（`printf`中`%lf`与`%f`功能相同，但`scanf`中需区分） | `printf("double c = %.5lf\n", 3.141592);`    | `double c = 3.14159` |
+| 字符 (`char`)           | `%c`       | 输出单个字符（ASCII码或字符变量）                            | `printf("char d = %c\n", 'A');`              | `char d = A`         |
+| 字符串 (`char[]`)       | `%s`       | 输出字符串（直到遇到空字符`\0`）                             | `printf("string str = %s\n", "Hello");`      | `string str = Hello` |
+| 长整型 (`long`)         | `%ld`      | 输出带符号的长整型十进制整数                                 | `printf("long e = %ld\n", 1000000L);`        | `long e = 1000000`   |
+| 无符号整型 (`unsigned`) | `%u`       | 输出无符号十进制整数（无正负号）                             | `printf("unsigned f = %u\n", 255);`          | `unsigned f = 255`   |
+| 无符号长整型 (`size_t`) | `%lu`      | 输出`sizeof`结果（`size_t`类型为无符号长整型）               | `printf("Size of int: %lu\n", sizeof(int));` | `Size of int: 4`     |
+
+------
 
 ## Q&A
 

@@ -16,12 +16,19 @@ int main() {
     // 无符号整型 4bytes
     unsigned int f = 100;
 
+    // %d 用于打印整数
     printf("int a = %d\n", a);
+    // %.2f 用于打印浮点数，.2表示保留2位小数
     printf("float b = %.2f\n", b);
+    // %.5lf 用于打印双精度浮点数，.5表示保留5位小数
     printf("double c = %.5lf\n", c);
+    // %c 用于打印单个字符
     printf("char d = %c\n", d);
+    // %s 用于打印字符串
     printf("string str = %s\n", str);
+    // %ld 用于打印长整型数据
     printf("long e = %ld\n", e);
+    // %u 用于打印无符号整数
     printf("unsigned int f = %u\n", f);
 
     // sizeof运算符返回数据类型或变量的字节大小
